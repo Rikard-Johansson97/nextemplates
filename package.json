@@ -1,6 +1,8 @@
 {
   "name": "nextemplates",
+  "publisher": "RikardJohansson",
   "displayName": "NexTemplates",
+  "icon": "assets/icon.png",
   "description": "Elevate your Next.js incantations with handpicked spell-snippets. Delve into enchanting code realms with mystical prefixes, woven for utmost efficiency and adaptability. A grimoire for every Next.js mage. Let nexTemplates be the wand to your wizardry!",
   "version": "0.0.1",
   "engines": {
@@ -16,9 +18,6 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
-  },
-  "dependencies": {
-    "@vscode/vsce": "^2.21.1"
   },
   "repository": {
     "type": "git",

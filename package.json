@@ -22,5 +22,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Rikard-Johansson97/nextemplates.git"
-  }
+  },
+  "keywords": [
+    "Next 13",
+    "Next.js",
+    "Typescript",
+    "snippets",
+    "templates",
+    "JavaScript",
+    "React",
+    "development",
+    "app router",
+    "13+"
+  ]
 }

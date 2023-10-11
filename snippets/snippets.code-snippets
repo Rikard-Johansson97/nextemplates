@@ -1,0 +1,65 @@
+{
+  "Next TypeScript Client Component": {
+    "prefix": "ntcc",
+    "body": [
+      "\"use client\"",
+      "",
+      "import React, { FC } from 'react';",
+      "",
+      "type ${TM_FILENAME_BASE}Props = {};",
+      "",
+      "const $TM_FILENAME_BASE: FC<${TM_FILENAME_BASE}Props> = ({}) => {",
+      "  return <div>${TM_FILENAME_BASE}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Generates a Next.js TypeScript client-side functional component based on the file name."
+  },
+  "Next TypeScript Server Component": {
+    "prefix": "ntsc",
+    "body": [
+      "import React, { FC } from 'react';",
+      "",
+      "type ${TM_FILENAME_BASE}Props = {};",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<${TM_FILENAME_BASE}Props> = ({}) => {",
+      "  $0",
+      "  return <div>${TM_FILENAME_BASE}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Generates a Next.js TypeScript server-side functional component based on the file name."
+  },
+  "Next Client Component": {
+    "prefix": "ncc",
+    "body": [
+      "\"use client\"",
+      "",
+      "import React, { FC } from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE}: FC = ({}) => {",
+      "  $0",
+      "  return <div>${TM_FILENAME_BASE}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Generates a Next.js client-side functional component without props type based on the file name."
+  },
+  "Next Server Component": {
+    "prefix": "nsc",
+    "body": [
+      "import React, { FC } from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE}: FC = ({}) => {",
+      "  $0",
+      "  return <div>${TM_FILENAME_BASE}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Generates a Next.js server-side functional component without props type based on the file name."
+  }
+}

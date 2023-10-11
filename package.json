@@ -1,0 +1,23 @@
+{
+  "name": "nextemplates",
+  "displayName": "NexTemplates",
+  "description": "Elevate your Next.js incantations with handpicked spell-snippets. Delve into enchanting code realms with mystical prefixes, woven for utmost efficiency and adaptability. A grimoire for every Next.js mage. Let nexTemplates be the wand to your wizardry!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.21.1"
+  }
+}

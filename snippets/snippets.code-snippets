@@ -32,6 +32,31 @@
 	  ],
 	  "description": "Generates a Next.js page component with props type and an editable name."
 	},
+
+	// NPCPP = Next Page Component with Props and Params
+	"Next Page Component with Props and Params": {
+		"prefix": "npcpp",
+		"body": [
+		  "type ${1:name}Props = {",
+			"params: {",
+			"  ${2:paramName}: string;",   // User can replace 'paramName' with actual parameter name
+			"}",
+		  "};",
+		  "",
+		  "const ${1:name}Page = ({",
+		  "  params",  // Since params are a standard prop, it's always passed
+		  "} : ${1:name}Props) => {",
+		  "  const { ${2:paramName} } = params;", // This destructures the provided param
+		  "  // Add component logic here...",
+		  "  return <div>",
+		  "  $3", 
+		  "	 </div>;",  // Placeholder display name
+		  "};",
+		  "",
+		  "export default ${1:name}Page;"
+		],
+		"description": "Generates a Next.js page component with props type and params type and an editable name."
+	},
   
 	// NCC = Next Client Component
 	"Next Client Component": {

@@ -1,6 +1,6 @@
 {
 	// NPC = Next Page Component
-	"Next Page Component": {
+	"🧙‍♂️ Next Page Component 🧙‍♂️": {
 	  "prefix": "npc",
 	  "body": [
 		"const ${1:name}Page = () => {",
@@ -14,7 +14,7 @@
 	},
   
 	// NPCP = Next Page Component with Props
-	"Next Page Component with Props": {
+	"🧙‍♂️ Next Page Component with Props 🧙‍♂️": {
 	  "prefix": "npcp",
 	  "body": [
 		"type ${1:name}PageProps = {",
@@ -34,7 +34,7 @@
 	},
 
 	// NPCPP = Next Page Component with Props and Params
-	"Next Page Component with Props and Params": {
+	"🧙‍♂️ Next Page Component with Props and Params 🧙‍♂️": {
 		"prefix": "npcpp",
 		"body": [
 		  "type ${1:name}Props = {",
@@ -59,7 +59,7 @@
 	},
   
 	// NCC = Next Client Component
-	"Next Client Component": {
+	"🧙‍♂️ Next Client Component 🧙‍♂️": {
 	  "prefix": "ncc",
 	  "body": [
 		"\"use client\"",
@@ -75,7 +75,7 @@
 	},
   
 	// NCCP = Next Client Component with Props
-	"Next Client Component with Props": {
+	"🧙‍♂️ Next Client Component with Props 🧙‍♂️": {
 	  "prefix": "nccp",
 	  "body": [
 		"\"use client\"",
@@ -98,7 +98,7 @@
 	},
   
 	// NSC = Next Server Component
-	"Next Server Component": {
+	"🧙‍♂️ Next Server Component 🧙‍♂️": {
 	  "prefix": "nsc",
 	  "body": [
 		"const ${TM_FILENAME_BASE} = () => {",
@@ -112,7 +112,7 @@
 	},
   
 	// NSCP = Next Server Component with Props
-	"Next Server Component with Props": {
+	"🧙‍♂️ Next Server Component with Props 🧙‍♂️": {
 	  "prefix": "nscp",
 	  "body": [
 		"type ${TM_FILENAME_BASE}Props = {",
@@ -132,7 +132,7 @@
 	},
   
 	// NASC
-	"Next Async Server Component": {
+	"🧙‍♂️ Next Async Server Component 🧙‍♂️": {
 	  "prefix": "nasc",
 	  "body": [
 		"const ${TM_FILENAME_BASE} = async () => {",
@@ -146,7 +146,7 @@
 	},
   
 	// NASCP = Next Async Server Component with Props
-	"Next Async Server Component with Props": {
+	"🧙‍♂️ Next Async Server Component with Props 🧙‍♂️": {
 	  "prefix": "nascp",
 	  "body": [
 		"type ${TM_FILENAME_BASE}Props = {",
@@ -166,7 +166,7 @@
 	},
   
 	// NLC = Next Layout Component
-	"Next Layout Component": {
+	"🧙‍♂️ Next Layout Component 🧙‍♂️": {
 	  "prefix": "nlc",
 	  "body": [
 		"const Loading = () => {",
@@ -185,7 +185,7 @@
 	},
   
 	// NMW = Next Middleware
-	"Next Middleware": {
+	"🧙‍♂️ Next Middleware 🧙‍♂️": {
 	  "prefix": "nmw",
 	  "body": [
 		"import { NextResponse } from 'next/server';",
@@ -203,7 +203,7 @@
 	},
   
 	// NSMD = Next Static Metadata
-	"Next Static Metadata": {
+	"🧙‍♂️ Next Static Metadata 🧙‍♂️": {
 	  "prefix": "nsmd",
 	  "body": [
 		"import type { Metadata } from 'next';",
@@ -216,7 +216,7 @@
 	},
   
 	// NGMD = Next Generated Metadata
-	"Next Generated Metadata": {
+	"🧙‍♂️ Next Generated Metadata 🧙‍♂️": {
 	  "prefix": "ngmd",
 	  "body": [
 		"import type { Metadata } from 'next';",
@@ -242,7 +242,7 @@
 	},
   
 	// NEC = Next Error Component
-	"Next Error Component": {
+	"🧙‍♂️ Next Error Component 🧙‍♂️": {
 	  "prefix": "nec",
 	  "body": [
 		"'use client';",
@@ -275,7 +275,7 @@
 	},
 
 	// NGEC = Next Global Error Component
-	"Next Global Error Component": {
+	"🧙‍♂️ Next Global Error Component 🧙‍♂️": {
 		"prefix": "ngec",
 		"body": [
 		  "'use client';",
@@ -308,7 +308,7 @@
 	  },
 
     // NNF = Next Not Found
-    "Next Not Found": {
+    "🧙‍♂️ Next Not Found 🧙‍♂️": {
       "prefix": "nnfc",
       "body": [
         "import Link from 'next/link';",
@@ -331,7 +331,7 @@
     },
 
 	// NSAF = Next async Server Action Function
-	"Next Async Server Action function": {
+	"🧙‍♂️ Next Async Server Action function 🧙‍♂️": {
 	  "prefix": "nasaf",
 	  "body": [
 		"const $1 = async () => {",
@@ -344,7 +344,7 @@
 	},
 
 	// NASAC = Next async Server Action Component
-	"Next Async Server Action Component": {
+	"🧙‍♂️ Next Async Server Action Component 🧙‍♂️": {
 	  "prefix": "nasac",
 	  "body": [
 		"'use server'",

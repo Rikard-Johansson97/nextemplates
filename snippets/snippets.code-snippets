@@ -304,5 +304,34 @@
       ],
       "description": "Generates a simplified Next.js 'Not Found' component."
     },
+
+	// NSAF = Next async Server Action Function
+	"Next Async Server Action function": {
+	  "prefix": "nasaf",
+	  "body": [
+		"const $1 = async () => {",
+		"  'use server'",
+		"  $2",
+		"};",
+		"",
+	  ],
+	  "description": "Generates a Next.js async server-side action function"
+	},
+
+	// NASAC = Next async Server Action Component
+	"Next Async Server Action Component": {
+	  "prefix": "nasac",
+	  "body": [
+		"'use server'",
+		"",
+		"const ${TM_FILENAME_BASE} = async () => {",
+		"  $1",
+		"  return <div>${TM_FILENAME_BASE}$2</div>;",
+		"};",
+		"",
+		"export default ${TM_FILENAME_BASE};"
+	  ],
+	  "description": "Generates a Next.js async server-side action component based on the file name."
+	},
   }
   

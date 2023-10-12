@@ -17,7 +17,17 @@
         "language": "typescript",
         "path": "./snippets/snippets.code-snippets"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "NexTemplates",
+      "properties": {
+        "editor.suggest.snippetsPreventQuickSuggestions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Prevent quick suggestions for snippets. Recommended for optimal use of NexTemplates."
+        }
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -34,5 +44,8 @@
     "development",
     "app router",
     "13+"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
 }

@@ -4,3 +4,8 @@ node_modules
 
 **/node_modules
 **/dist
+
+
+# Ignore artifacts:
+build
+coverage

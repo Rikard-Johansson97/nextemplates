@@ -1,32 +1,51 @@
-# 🧙‍♂️ NexTemplates
+# 🧙‍♂️ NexTemplates for Next.js 13+
 
-✨ Greetings, intrepid **Next.js 13+** voyager! Step right up and witness the marvel of **NexTemplates** — the secret portal within VS Code that teleports you straight to the high heavens of scaffolding. If you've been tirelessly weaving the same code spells, behold your new wand, err... your enchanting extension!
+✨ Welcome to **NexTemplates**—your magical extension for VS Code that propels your Next.js 13+ development journey to the stratosphere. Say goodbye to monotonous boilerplate and hello to instant scaffolding!
 
 ![Banner](./assets/banner.gif)
 
 ## 🎩 Features: Where Magic Happens!
 
-**NexTemplates** isn't just code; it's pure enchantment! Whisper the desired prefix, and with a flick and swish, watch as your file name unfurls into a majestic component right before your very eyes.
+**NexTemplates** harnesses the arcane arts to transform simple prefixes into robust Next.js components. Just whisper the right incantation, and behold as your spell manifests!
 
-| Prefix | The Spell It Casts                                         |
-| ------ | ---------------------------------------------------------- |
-| `ntcc` | Crafts a TypeScript client-side charm with props.          |
-| `ntsc` | Brings forth a TypeScript server-side potion with props.   |
-| `ncc`  | Evokes a Client-side spell without the trappings of props. |
-| `nsc`  | Conjures a Server-side incantation, free from props.       |
+| prefix  | summons                                |
+| ------- | -------------------------------------- |
+| `npc`   | Next page component                    |
+| `npcp`  | Next Page component with props         |
+| `ncc`   | Next Client component                  |
+| `nccp`  | Next Client component with props       |
+| `nsc`   | Next Server component                  |
+| `nscp`  | Next Server component with props       |
+| `nasc`  | Next Async server component            |
+| `nascp` | Next Async server component with props |
+| `nlc`   | Next layout component                  |
+| `nmw`   | Next Middleware                        |
+| `nsmd`  | Next Static metadata                   |
+| `ngmd`  | Next Generated metadata                |
+| `nec`   | Next error component                   |
+| `ngec`  | Next global-error component            |
+| `nnfc`  | Next not-found component               |
 
-> 🌌 **Mystic Tip**: Want a glimpse of sorcery? Let the GIF above bewitch you!
+> 🌌 **Mystic Tip**: For a visual spectacle of these spells, let the GIF above guide you!
 
-## 📜 Scrolls & Tomes Needed
+## 📜 Prerequisites
 
-Ensure your spellbook has the scrolls of Next.js and React. Not in your inventory? Best fetch them! Only then shall the **NexTemplates** magic truly shimmer.
+Before wielding this powerful extension, ensure you've mastered the scrolls of Next.js and React. If these aren't in your grimoire yet, best obtain them first.
 
-## 🔮 Crystal Ball Settings: (Actually, None!)
+## 🔮 Usage
 
-Fear not! This orb requires no tinkering. **NexTemplates** is like that elixir of myths – perfect as is. Simply invoke (install) and relish the taste of magic.
+1. **Installation**: Invoke the **NexTemplates** extension from the VS Code marketplace.
+2. **Casting Spells**: In any `typescript` file, type your chosen prefix (like `npc` for a new page component). Hit `Tab`, and watch the magic unfold.
+3. **Customization**: Each spell (snippet) contains placeholders (`$1`, `$2`, etc.) that guide your incantations. Navigate between them using the `Tab` key to customize the generated component.
 
-## 🎉 The Grand Finale!
+## 📌 Enhancements
 
-Embark on a coding odyssey like none other, where every line feels like a spell, and boilerplate is just a myth. With **NexTemplates**, every keystroke is a step deeper into the arcane.
+1. **GitHub Copilot Synergy**: Combine the might of **NexTemplates** with [GitHub Copilot](https://copilot.github.com/) to ascend to coding divinity. Let Copilot complete your spells and incantations, making the coding process truly ethereal.
 
-May Your Code Always Be Enchanted! ✨
+2. **Optimal Setting**: To ensure your spells are woven seamlessly, consider setting `"editor.suggest.snippetsPreventQuickSuggestions": true` in your VS Code settings. This arcane tweak ensures that the auto-suggestions don't interfere with the magic of your snippets.
+
+## 🎉 Concluding the Ritual
+
+With **NexTemplates**, each line of code feels like a mystical chant, and redundant code becomes folklore. Embrace the enchantment and let your Next.js journey be filled with wonder.
+
+May your code be forever enchanted! ✨

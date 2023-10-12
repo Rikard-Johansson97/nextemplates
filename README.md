@@ -25,6 +25,8 @@
 | `nec`   | Next error component                   |
 | `ngec`  | Next global-error component            |
 | `nnfc`  | Next not-found component               |
+| `nasac` | Next async server action component     |
+| `nasaf` | Next async server action function      |
 
 > 🌌 **Mystic Tip**: For a visual spectacle of these spells, let the GIF above guide you!
 

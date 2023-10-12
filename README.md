@@ -8,25 +8,26 @@
 
 **NexTemplates** harnesses the arcane arts to transform simple prefixes into robust Next.js components. Just whisper the right incantation, and behold as your spell manifests!
 
-| prefix  | summons                                |
-| ------- | -------------------------------------- |
-| `npc`   | Next page component                    |
-| `npcp`  | Next Page component with props         |
-| `ncc`   | Next Client component                  |
-| `nccp`  | Next Client component with props       |
-| `nsc`   | Next Server component                  |
-| `nscp`  | Next Server component with props       |
-| `nasc`  | Next Async server component            |
-| `nascp` | Next Async server component with props |
-| `nlc`   | Next layout component                  |
-| `nmw`   | Next Middleware                        |
-| `nsmd`  | Next Static metadata                   |
-| `ngmd`  | Next Generated metadata                |
-| `nec`   | Next error component                   |
-| `ngec`  | Next global-error component            |
-| `nnfc`  | Next not-found component               |
-| `nasac` | Next async server action component     |
-| `nasaf` | Next async server action function      |
+| prefix  | summons                                    |
+| ------- | ------------------------------------------ |
+| `npc`   | Next page component                        |
+| `npcp`  | Next Page component with props             |
+| `npcpp` | Next Page component with props with params |
+| `ncc`   | Next Client component                      |
+| `nccp`  | Next Client component with props           |
+| `nsc`   | Next Server component                      |
+| `nscp`  | Next Server component with props           |
+| `nasc`  | Next Async server component                |
+| `nascp` | Next Async server component with props     |
+| `nlc`   | Next layout component                      |
+| `nmw`   | Next Middleware                            |
+| `nsmd`  | Next Static metadata                       |
+| `ngmd`  | Next Generated metadata                    |
+| `nec`   | Next error component                       |
+| `ngec`  | Next global-error component                |
+| `nnfc`  | Next not-found component                   |
+| `nasac` | Next async server action component         |
+| `nasaf` | Next async server action function          |
 
 > 🌌 **Mystic Tip**: For a visual spectacle of these spells, let the GIF above guide you!
 

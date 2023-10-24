@@ -19,7 +19,8 @@
 | `nscp`  | Next Server component with props           |
 | `nasc`  | Next Async server component                |
 | `nascp` | Next Async server component with props     |
-| `nlc`   | Next layout component                      |
+| `nlcp`  | Next Layout component with props           |
+| `nlc`   | Next Loading component                     |
 | `nmw`   | Next Middleware                            |
 | `nsmd`  | Next Static metadata                       |
 | `ngmd`  | Next Generated metadata                    |
@@ -44,8 +45,8 @@ Before wielding this powerful extension, ensure you've mastered the scrolls of N
 ## 📌 Enhancements
 
 1. **GitHub Copilot Synergy**: Combine the might of **NexTemplates** with [GitHub Copilot](https://copilot.github.com/) to ascend to coding divinity. Let Copilot complete your spells and incantations, making the coding process truly ethereal.
-
 2. **Optimal Setting**: To ensure your spells are woven seamlessly, consider setting `"editor.suggest.snippetsPreventQuickSuggestions": true` in your VS Code settings. This arcane tweak ensures that the auto-suggestions don't interfere with the magic of your snippets.
+3. **Conformity with Best Practices**: NexTemplates diligently follows the practices laid out in the [Vercel Style Guide](https://github.com/vercel/style-guide). Moreover, the snippets are conjured directly from the sacred texts of the [Next.js documentation](https://nextjs.org/docs/app/building-your-application/routing), ensuring your components are not only spellbinding but also crafted following the sacred lore.
 
 ## 🎉 Concluding the Ritual
 

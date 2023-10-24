@@ -1,355 +1,381 @@
 {
-	// NPC = Next Page Component
-	"🧙‍♂️ Next Page Component 🧙‍♂️": {
-	  "prefix": "npc",
-	  "body": [
-		"const ${1:name}Page = () => {",
-		"  $2",
-		"  return <div>${1:name}$3</div>;",
-		"};",
-		"",
-		"export default ${1:name}Page;"
-	  ],
-	  "description": "Generates a Next.js page component with an editable name."
-	},
-  
-	// NPCP = Next Page Component with Props
-	"🧙‍♂️ Next Page Component with Props 🧙‍♂️": {
-	  "prefix": "npcp",
-	  "body": [
-		"type ${1:name}PageProps = {",
-		"  $2",
-		"};",
-		"",
-		"const ${1:name}Page = ({",
-		"  $3",
-		"}: ${1:name}PageProps) => {",
-		"  $4",
-		"  return <div>${1:name}$5</div>;",
-		"};",
-		"",
-		"export default ${1:name}Page;"
-	  ],
-	  "description": "Generates a Next.js page component with props type and an editable name."
-	},
+  // NPC = Next Page Component
+  "🧙‍♂️ Next Page Component 🧙‍♂️": {
+    "prefix": "npc",
+    "body": [
+      "function ${1:name}Page() {",
+      "  $2", // Placeholder for component logic
+      "  return (",
+      "    <div>",
+      "      ${3:content}", // Placeholder for the main content of the component
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:name}Page;"
+    ],
+    "description": "Generates a Next.js page component with an editable name."
+  },
 
-	// NPCPP = Next Page Component with Props and Params
-	"🧙‍♂️ Next Page Component with Props and Params 🧙‍♂️": {
-		"prefix": "npcpp",
-		"body": [
-		  "type ${1:name}Props = {",
-			"params: {",
-			"  ${2:paramName}: string;",   // User can replace 'paramName' with actual parameter name
-			"}",
-		  "};",
-		  "",
-		  "const ${1:name}Page = ({",
-		  "  params",  // Since params are a standard prop, it's always passed
-		  "} : ${1:name}Props) => {",
-		  "  const { ${2:paramName} } = params;", // This destructures the provided param
-		  "  // Add component logic here...",
-		  "  return <div>",
-		  "  $3", 
-		  "	 </div>;",  // Placeholder display name
-		  "};",
-		  "",
-		  "export default ${1:name}Page;"
-		],
-		"description": "Generates a Next.js page component with props type and params type and an editable name."
-	},
-  
-	// NCC = Next Client Component
-	"🧙‍♂️ Next Client Component 🧙‍♂️": {
-		"prefix": "ncc",
-		"body": [
-		"\"use client\"",
-		"",
-		"function ${TM_FILENAME_BASE}() {",
-		"  $1",
-		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js client-side functional component based on file name."
-	},
-	
-	// NCCP = Next Client Component with Props
-	"🧙‍♂️ Next Client Component with Props 🧙‍♂️": {
-		"prefix": "nccp",
-		"body": [
-		"\"use client\"",
-		"",
-		"type ${TM_FILENAME_BASE}Props = {",
-		"  $1",
-		"};",
-		"",
-		"function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
-		"  $3",
-		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js TypeScript client-side functional component based on the file name."
-	},
-	
-	// NSC = Next Server Component
-	"🧙‍♂️ Next Server Component 🧙‍♂️": {
-		"prefix": "nsc",
-		"body": [
-		"function ${TM_FILENAME_BASE}() {",
-		"  $1",
-		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js server-side functional component based on the fileName."
-	},
-	
-	// NSCP = Next Server Component with Props
-	"🧙‍♂️ Next Server Component with Props 🧙‍♂️": {
-		"prefix": "nscp",
-		"body": [
-		"type ${TM_FILENAME_BASE}Props = {",
-		"  $1",
-		"};",
-		"",
-		"function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
-		"  $3",
-		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js TypeScript server-side functional component based on the file name."
-	},
-	
-	// NASC
-	"🧙‍♂️ Next Async Server Component 🧙‍♂️": {
-		"prefix": "nasc",
-		"body": [
-		"async function ${TM_FILENAME_BASE}() {",
-		"  $1",
-		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js async server-side functional component based on the file name."
-	},
-	
-	// NASCP = Next Async Server Component with Props
-	"🧙‍♂️ Next Async Server Component with Props 🧙‍♂️": {
-		"prefix": "nascp",
-		"body": [
-		"type ${TM_FILENAME_BASE}Props = {",
-		"  $1",
-		"};",
-		"",
-		"async function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
-		"  $3",
-		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"}",
-		"",
-		"export { ${TM_FILENAME_BASE} };"
-		],
-		"description": "Generates a Next.js TypeScript async server-side functional component based on the file name."
-	},
-  
-	// NLC = Next Layout Component
-	"🧙‍♂️ Next Layout Component 🧙‍♂️": {
-	  "prefix": "nlc",
-	  "body": [
-		"const Loading = () => {",
-		"  $1",
-		"",
-		"  return (",
-		"    <div>",
-		"      	$2",
-		"    </div>",
-		"  );",
-		"};",
-		"",
-		"export default Loading;"
-	  ],
-	  "description": "Generates a Next.js layout component based on the file name."
-	},
-  
-	// NMW = Next Middleware
-	"🧙‍♂️ Next Middleware 🧙‍♂️": {
-	  "prefix": "nmw",
-	  "body": [
-		"import { NextResponse } from 'next/server';",
-		"import type { NextRequest } from 'next/server';",
-		"",
-		"export function middleware(request: NextRequest) {",
-		"  return NextResponse.redirect(new URL('/', request.url));",
-		"}",
-		"",
-		"export const config = {",
-		"  matcher: '$1',",
-		"};"
-	  ],
-	  "description": "Generates a Next.js middleware with matcher configuration."
-	},
-  
-	// NSMD = Next Static Metadata
-	"🧙‍♂️ Next Static Metadata 🧙‍♂️": {
-	  "prefix": "nsmd",
-	  "body": [
-		"import type { Metadata } from 'next';",
-		"",
-		"export const metadata: Metadata = {",
-		"  title: '$1',",
-		"};"
-	  ],
-	  "description": "Generates a Next.js static metadata function."
-	},
-  
-	// NGMD = Next Generated Metadata
-	"🧙‍♂️ Next Generated Metadata 🧙‍♂️": {
-	  "prefix": "ngmd",
-	  "body": [
-		"import type { Metadata } from 'next';",
-		"",
-		"type GenerateMetadataProps = {",
-		"  params: {",
-		"    $1: string",
-		"  }",
-		"};",
-		"",
-		"export function generateMetadata(",
-		"  { params }: GenerateMetadataProps",
-		"): Metadata {",
-		"  const $1 = params.$1;",
-		"",
-		"  return {",
-		"    title: $1,",
-		"  	$2",
-		"  };",
-		"}"
-	  ],
-	  "description": "Generates a Next.js Metadata function using route params."
-	},
-  
-	// NEC = Next Error Component
-	"🧙‍♂️ Next Error Component 🧙‍♂️": {
-	  "prefix": "nec",
-	  "body": [
-		"'use client';",
-		"",
-		"import { useEffect } from 'react';",
-		"",
-		"type ErrorProps = {",
-		"  error: Error & { digest?: string };",
-		"  reset: () => void;",
-		"};",
-		"",
-		"const ErrorComponent = ({ error, reset }: ErrorProps ) => {",
-		"  useEffect(() => {",
-		"    console.error(error);",
-		"  }, [error]);",
-		"",
-		"  $1"
-		"",
-		"  return (",
-		"    <div>",
-		"      <h2>{error.message}</h2>",
-		"      <button onClick={reset}>Try again</button>",
-		"    </div>",
-		"  );",
-		"}",
-		"",
-		"export default ErrorComponent;"
-	  ],
-	  "description": "Generates a simplified Next.js client error component with `error` and `reset` props."
-	},
+  // NPCP = Next Page Component with Props
+  "🧙‍♂️ Next Page Component with Props 🧙‍♂️": {
+    "prefix": "npcp",
+    "body": [
+      "type ${1:name}PageProps = {",
+      "  $2", // Placeholder for properties in the props type
+      "};",
+      "",
+      "function ${1:name}Page({",
+      "  $3", // Placeholder for destructuring props in the function parameter
+      "}: ${1:name}PageProps) {",
+      "  $4", // Placeholder for component logic
+      "  return (",
+      "    <div>",
+      "      ${5:content}", // Placeholder for the main content of the component
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:name}Page;"
+    ],
+    "description": "Generates a Next.js page component with props type and an editable name."
+  },
 
-	// NGEC = Next Global Error Component
-	"🧙‍♂️ Next Global Error Component 🧙‍♂️": {
-		"prefix": "ngec",
-		"body": [
-		  "'use client';",
-		  "",
-		  "import { useEffect } from 'react';",
-		  "",
-		  "type GlobalErrorProps = {",
-		  "  error: Error & { digest?: string };",
-		  "  reset: () => void;",
-		  "};",
-		  "",
-		  "const GlobalError = ({ error, reset }: GlobalErrorProps ) => {",
-		  "  useEffect(() => {",
-		  "    console.error(error);",
-		  "  }, [error]);",
-		  "",
-		  "  $1"
-		  "",
-		  "  return (",
-		  "    <div>",
-		  "      <h2>{error.message}</h2>",
-		  "      <button onClick={reset}>Try again</button>",
-		  "    </div>",
-		  "  );",
-		  "};",
-		  "",
-		  "export default GlobalError;"
-		],
-		"description": "Generates a simplified Next.js client error component with `error` and `reset` props."
-	  },
+  // NPCPP = Next Page Component with Props and Params
+  "🧙‍♂️ Next Page Component with Props and Params 🧙‍♂️": {
+    "prefix": "npcpp",
+    "body": [
+      "type ${1:name}Props = {",
+      "  params: {",
+      "    ${2:paramName}: string;", // User can replace 'paramName' with actual parameter name
+      "  }",
+      "};",
+      "",
+      "function ${1:name}Page({",
+      "  params", // Since params are a standard prop, it's always passed
+      "} : ${1:name}Props) {",
+      "  const { ${2:paramName} } = params;", // This destructures the provided param
+      "  // Add component logic here...",
+      "  return (",
+      "    <div>",
+      "      $3", // Placeholder for the main content of the component
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:name}Page;"
+    ],
+    "description": "Generates a Next.js page component with props and params type and an editable name."
+  },
 
-    // NNF = Next Not Found
-    "🧙‍♂️ Next Not Found 🧙‍♂️": {
-      "prefix": "nnfc",
-      "body": [
-        "import Link from 'next/link';",
-        "",
-        "const NotFound = () => {",
-		    "  $1",
-		    "",
-        "  return (",
-        "    <div>",
-        "      <h2>Not Found</h2>",
-        "      <p>Could not find requested resource</p>",
-        "      <Link href=\"/\">Return Home</Link>",
-        "    </div>",
-        "  );",
-        "}",
-        "",
-        "export default NotFound;"
-      ],
-      "description": "Generates a simplified Next.js 'Not Found' component."
-    },
+  // NCC = Next Client Component
+  "🧙‍♂️ Next Client Component 🧙‍♂️": {
+    "prefix": "ncc",
+    "body": [
+      "\"use client\"",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "  $1",
+      "  return <div>${TM_FILENAME_BASE}$2</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js client-side functional component based on file name."
+  },
 
-	// NSAF = Next async Server Action Function
-	"🧙‍♂️ Next Async Server Action function 🧙‍♂️": {
-	  "prefix": "nasaf",
-	  "body": [
-		"const $1 = async () => {",
-		"  'use server'",
-		"  $2",
-		"};",
-		"",
-	  ],
-	  "description": "Generates a Next.js async server-side action function"
-	},
+  // NCCP = Next Client Component with Props
+  "🧙‍♂️ Next Client Component with Props 🧙‍♂️": {
+    "prefix": "nccp",
+    "body": [
+      "\"use client\"",
+      "",
+      "type ${TM_FILENAME_BASE}Props = {",
+      "  $1",
+      "};",
+      "",
+      "function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
+      "  $3",
+      "  return <div>${TM_FILENAME_BASE}$4</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js TypeScript client-side functional component based on the file name."
+  },
 
-	// NASAC = Next async Server Action Component
-	"🧙‍♂️ Next Async Server Action Component 🧙‍♂️": {
-	  "prefix": "nasac",
-	  "body": [
-		"'use server'",
-		"",
-		"const ${TM_FILENAME_BASE} = async () => {",
-		"  $1",
-		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"};",
-		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js async server-side action component based on the file name."
-	},
+  // NSC = Next Server Component
+  "🧙‍♂️ Next Server Component 🧙‍♂️": {
+    "prefix": "nsc",
+    "body": [
+      "function ${TM_FILENAME_BASE}() {",
+      "  $1",
+      "  return <div>${TM_FILENAME_BASE}$2</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js server-side functional component based on the fileName."
+  },
+
+  // NSCP = Next Server Component with Props
+  "🧙‍♂️ Next Server Component with Props 🧙‍♂️": {
+    "prefix": "nscp",
+    "body": [
+      "type ${TM_FILENAME_BASE}Props = {",
+      "  $1",
+      "};",
+      "",
+      "function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
+      "  $3",
+      "  return <div>${TM_FILENAME_BASE}$4</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js TypeScript server-side functional component based on the file name."
+  },
+
+  // NASC
+  "🧙‍♂️ Next Async Server Component 🧙‍♂️": {
+    "prefix": "nasc",
+    "body": [
+      "async function ${TM_FILENAME_BASE}() {",
+      "  $1",
+      "  return <div>${TM_FILENAME_BASE}$2</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js async server-side functional component based on the file name."
+  },
+
+  // NASCP = Next Async Server Component with Props
+  "🧙‍♂️ Next Async Server Component with Props 🧙‍♂️": {
+    "prefix": "nascp",
+    "body": [
+      "type ${TM_FILENAME_BASE}Props = {",
+      "  $1",
+      "};",
+      "",
+      "async function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
+      "  $3",
+      "  return <div>${TM_FILENAME_BASE}$4</div>;",
+      "}",
+      "",
+      "export { ${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js TypeScript async server-side functional component based on the file name."
+  },
+
+  // NLC = Next Loading Component
+  "🧙‍♂️ Next Loading Component 🧙‍♂️": {
+    "prefix": "nlc",
+    "body": [
+      "function Loading() {",
+      "  $1",
+      "  return (",
+      "    <div>",
+      "      $2",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default Loading;"
+    ],
+    "description": "Generates a Next.js Loading component based on next docs."
+  },
+
+  // NLCP = Next Layout Component with Props
+  "🧙‍♂️ Next Layout Component 🧙‍♂️": {
+    "prefix": "nlcp",
+    "body": [
+      "import type { ReactNode } from 'react';",
+      "",
+      "type LayoutProps = {",
+      "  children: ReactNode;",
+      "};",
+      "",
+      "function Layout({ children }: LayoutProps) {",
+      "  $1",
+      "  return (",
+      "    <section>",
+      "      {children}",
+      "    </section>",
+      "  );",
+      "}",
+      "",
+      "export default Layout;"
+    ],
+    "description": "Generates a Next.js Layout component based on next docs."
+  },
+
+  // NMW = Next Middleware
+  "🧙‍♂️ Next Middleware 🧙‍♂️": {
+    "prefix": "nmw",
+    "body": [
+      "import { NextResponse } from 'next/server';",
+      "import type { NextRequest } from 'next/server';",
+      "",
+      "export function middleware(request: NextRequest) {",
+      "  return NextResponse.redirect(new URL('/', request.url));",
+      "}",
+      "",
+      "export const config = {",
+      "  matcher: '$1',",
+      "};"
+    ],
+    "description": "Generates a Next.js middleware with matcher configuration."
+  },
+
+  // NSMD = Next Static Metadata
+  "🧙‍♂️ Next Static Metadata 🧙‍♂️": {
+    "prefix": "nsmd",
+    "body": [
+      "import type { Metadata } from 'next';",
+      "",
+      "export const metadata: Metadata = {",
+      "  title: '$1',",
+      "};"
+    ],
+    "description": "Generates a Next.js static metadata function."
+  },
+
+  // NGMD = Next Generated Metadata
+  "🧙‍♂️ Next Generated Metadata 🧙‍♂️": {
+    "prefix": "ngmd",
+    "body": [
+      "import type { Metadata } from 'next';",
+      "",
+      "type GenerateMetadataProps = {",
+      "  params: {",
+      "    $1: string",
+      "  }",
+      "};",
+      "",
+      "export function generateMetadata(",
+      "  { params }: GenerateMetadataProps",
+      "): Metadata {",
+      "  const $1 = params.$1;",
+      "",
+      "  return {",
+      "    title: $1,",
+      "  	$2",
+      "  };",
+      "}"
+    ],
+    "description": "Generates a Next.js Metadata function using route params."
+  },
+
+  // NEC = Next Error Component
+  "🧙‍♂️ Next Error Component 🧙‍♂️": {
+    "prefix": "nec",
+    "body": [
+      "'use client';",
+      "",
+      "import { useEffect } from 'react';",
+      "",
+      "type ErrorProps = {",
+      "  error: Error & { digest?: string };",
+      "  reset: () => void;",
+      "};",
+      "",
+      "function Error({ error, reset }: ErrorProps) {",
+      "  useEffect(() => {",
+      "    console.error(error);",
+      "  }, [error]);",
+      "",
+      "  $1",
+      "",
+      "  return (",
+      "    <div>",
+      "      <h2>{error.message}</h2>",
+      "      <button onClick={reset}>Try again</button>",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default Error;"
+    ],
+    "description": "Generates a simplified Next.js client error component with `error` and `reset` props."
+  },
+
+  // NGEC = Next Global Error Component
+  "🧙‍♂️ Next Global Error Component 🧙‍♂️": {
+    "prefix": "ngec",
+    "body": [
+      "'use client';",
+      "",
+      "import { useEffect } from 'react';",
+      "",
+      "type GlobalErrorProps = {",
+      "  error: Error & { digest?: string };",
+      "  reset: () => void;",
+      "};",
+      "",
+      "function GlobalError({ error, reset }: GlobalErrorProps) {",
+      "  useEffect(() => {",
+      "    console.error(error);",
+      "  }, [error]);",
+      "",
+      "  $1",
+      "",
+      "  return (",
+      "    <div>",
+      "      <h2>{error.message}</h2>",
+      "      <button onClick={reset}>Try again</button>",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default GlobalError;"
+    ],
+    "description": "Generates a simplified Next.js global error component with `error` and `reset` props."
+  },
+
+  // NNF = Next Not Found Component
+  "🧙‍♂️ Next Not Found Component 🧙‍♂️": {
+    "prefix": "nnfc",
+    "body": [
+      "import Link from 'next/link';",
+      "",
+      "function NotFound() {",
+      "  $1",
+      "",
+      "  return (",
+      "    <div>",
+      "      <h2>Not Found</h2>",
+      "      <p>Could not find requested resource</p>",
+      "      <Link href=\"/\">Return Home</Link>",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default NotFound;"
+    ],
+    "description": "Generates a simplified Next.js 'Not Found' component."
+  },
+
+  // NSAF = Next Async Server Action Function
+  "🧙‍♂️ Next Async Server Action Function 🧙‍♂️": {
+    "prefix": "nsaf",
+    "body": ["async function $1() {", "  'use server';", "  $2", "}", ""],
+    "description": "Generates a Next.js async server-side action function"
+  },
+
+  // NASAC = Next Async Server Action Component
+  "🧙‍♂️ Next Async Server Action Component 🧙‍♂️": {
+    "prefix": "nasac",
+    "body": [
+      "'use server';",
+      "",
+      "async function ${TM_FILENAME_BASE}() {",
+      "  $1",
+      "  return <div>${TM_FILENAME_BASE}$2</div>;",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "Generates a Next.js async server-side action component based on the file name."
   }
-  
+}

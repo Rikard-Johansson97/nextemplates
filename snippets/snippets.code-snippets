@@ -60,109 +60,102 @@
   
 	// NCC = Next Client Component
 	"🧙‍♂️ Next Client Component 🧙‍♂️": {
-	  "prefix": "ncc",
-	  "body": [
+		"prefix": "ncc",
+		"body": [
 		"\"use client\"",
 		"",
-		"const ${TM_FILENAME_BASE} = () => {",
+		"function ${TM_FILENAME_BASE}() {",
 		"  $1",
 		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js client-side functional component based on file name."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js client-side functional component based on file name."
 	},
-  
+	
 	// NCCP = Next Client Component with Props
 	"🧙‍♂️ Next Client Component with Props 🧙‍♂️": {
-	  "prefix": "nccp",
-	  "body": [
+		"prefix": "nccp",
+		"body": [
 		"\"use client\"",
 		"",
 		"type ${TM_FILENAME_BASE}Props = {",
 		"  $1",
 		"};",
 		"",
-		"const $TM_FILENAME_BASE = ({",
-		"  $2",
-		"}: ${TM_FILENAME_BASE}Props) => {",
+		"function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
 		"  $3",
-		"",
 		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js TypeScript client-side functional component based on the file name."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js TypeScript client-side functional component based on the file name."
 	},
-  
+	
 	// NSC = Next Server Component
 	"🧙‍♂️ Next Server Component 🧙‍♂️": {
-	  "prefix": "nsc",
-	  "body": [
-		"const ${TM_FILENAME_BASE} = () => {",
+		"prefix": "nsc",
+		"body": [
+		"function ${TM_FILENAME_BASE}() {",
 		"  $1",
 		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js server-side functional component based on the fileName."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js server-side functional component based on the fileName."
 	},
-  
+	
 	// NSCP = Next Server Component with Props
 	"🧙‍♂️ Next Server Component with Props 🧙‍♂️": {
-	  "prefix": "nscp",
-	  "body": [
+		"prefix": "nscp",
+		"body": [
 		"type ${TM_FILENAME_BASE}Props = {",
 		"  $1",
 		"};",
 		"",
-		"const ${TM_FILENAME_BASE} = ({",
-		"  $2",
-		"}: ${TM_FILENAME_BASE}Props) => {",
+		"function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
 		"  $3",
 		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js TypeScript server-side functional component based on the file name."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js TypeScript server-side functional component based on the file name."
 	},
-  
+	
 	// NASC
 	"🧙‍♂️ Next Async Server Component 🧙‍♂️": {
-	  "prefix": "nasc",
-	  "body": [
-		"const ${TM_FILENAME_BASE} = async () => {",
+		"prefix": "nasc",
+		"body": [
+		"async function ${TM_FILENAME_BASE}() {",
 		"  $1",
 		"  return <div>${TM_FILENAME_BASE}$2</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js async server-side functional component based on the file name."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js async server-side functional component based on the file name."
 	},
-  
+	
 	// NASCP = Next Async Server Component with Props
 	"🧙‍♂️ Next Async Server Component with Props 🧙‍♂️": {
-	  "prefix": "nascp",
-	  "body": [
+		"prefix": "nascp",
+		"body": [
 		"type ${TM_FILENAME_BASE}Props = {",
 		"  $1",
 		"};",
 		"",
-		"const ${TM_FILENAME_BASE} = async ({",
-		"  $2",
-		"}: ${TM_FILENAME_BASE}Props) => {",
+		"async function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
 		"  $3",
 		"  return <div>${TM_FILENAME_BASE}$4</div>;",
-		"};",
+		"}",
 		"",
-		"export default ${TM_FILENAME_BASE};"
-	  ],
-	  "description": "Generates a Next.js TypeScript async server-side functional component based on the file name."
+		"export { ${TM_FILENAME_BASE} };"
+		],
+		"description": "Generates a Next.js TypeScript async server-side functional component based on the file name."
 	},
   
 	// NLC = Next Layout Component

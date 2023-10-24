@@ -4,7 +4,7 @@
   "displayName": "NexTemplates",
   "icon": "assets/wizard-icon.png",
   "description": "Elevate your Next.js incantations with handpicked spell-snippets. Delve into enchanting code realms with mystical prefixes, woven for utmost efficiency and adaptability. A grimoire for every Next.js mage. Let nexTemplates be the wand to your wizardry!",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.83.0"
   },

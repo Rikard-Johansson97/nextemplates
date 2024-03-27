@@ -260,7 +260,6 @@
       "",
       "  return {",
       "    title: $1,",
-      "  	$2",
       "  };",
       "}"
     ],
@@ -377,5 +376,87 @@
       "export default ${TM_FILENAME_BASE};"
     ],
     "description": "Generates a Next.js async server-side action component based on the file name."
+  },
+
+  //! ROUTE HANDLERS
+  // NGETR = Next Get Route
+  "🧙‍♂️ Next Get Route 🧙‍♂️": {
+    "prefix": "ngetr",
+    "body": ["export async function GET(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js GET route function."
+  },
+
+  // NHEADR = Next Head Route
+  "🧙‍♂️ Next Head Route 🧙‍♂️": {
+    "prefix": "nheadr",
+    "body": ["export async function HEAD(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js HEAD route function."
+  },
+
+  // NPOSTR = Next Post Route
+  "🧙‍♂️ Next Post Route 🧙‍♂️": {
+    "prefix": "npostr",
+    "body": ["export async function POST(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js POST route function."
+  },
+
+  // NPUTR = Next Put Route
+  "🧙‍♂️ Next Put Route 🧙‍♂️": {
+    "prefix": "nputr",
+    "body": ["export async function PUT(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js PUT route function."
+  },
+
+  // NDELETER = Next Delete Route
+  "🧙‍♂️ Next Delete Route 🧙‍♂️": {
+    "prefix": "ndelete",
+    "body": ["export async function DELETE(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js DELETE route function."
+  },
+
+  // NPATCHR = Next Patch Route
+  "🧙‍♂️ Next Patch Route 🧙‍♂️": {
+    "prefix": "npatchr",
+    "body": ["export async function PATCH(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js PATCH route function."
+  },
+
+  // NOPTIONSR = Next Options Route
+  "🧙‍♂️ Next Options Route 🧙‍♂️": {
+    "prefix": "noptionsr",
+    "body": ["export async function OPTIONS(request: Request) {", "  $1", "}"],
+    "description": "Generates a Next.js OPTIONS route function."
+  },
+
+  //   template.js
+  // NTC = Next Template Component
+  "🧙‍♂️ Next Template Component 🧙‍♂️": {
+    "prefix": "ntc",
+    "body": [
+      "export default function Template({ children }: { children: React.ReactNode }) {",
+      "  return <div>{children}</div>",
+      "}"
+    ],
+    "description": "Generates a Next.js template.ts component."
+  },
+
+  // NRF = Next Robots File
+  "🧙‍♂️ Next Robots File 🧙‍♂️": {
+    "prefix": "nrf",
+    "body": [
+      "import { MetadataRoute } from 'next'",
+      "",
+      "export default function robots(): MetadataRoute.Robots {",
+      "  return {",
+      "    rules: {",
+      "      userAgent: '*',",
+      "      allow: '/',",
+      "      disallow: '/private/',",
+      "    },",
+      "    sitemap: 'https://acme.com/sitemap.xml',",
+      "  }",
+      "}"
+    ],
+    "description": "Generates a Next.js robots.ts file."
   }
 }

@@ -3,7 +3,7 @@
   "publisher": "RikardJohansson",
   "displayName": "NexTemplates",
   "icon": "assets/wizard-icon.png",
-  "description": "Elevate your Next.js incantations with handpicked spell-snippets. Delve into enchanting code realms with mystical prefixes, woven for utmost efficiency and adaptability. A grimoire for every Next.js mage. Let nexTemplates be the wand to your wizardry!",
+  "description": "NexTemplates is a collection of snippets and templates for Next.js 14+.",
   "version": "2.0.1",
   "engines": {
     "vscode": "^1.83.0"
@@ -51,7 +51,13 @@
     "url": "https://github.com/Rikard-Johansson97"
   },
   "keywords": [
-    "Next 13",
+    "Next 14",
+    "Next.js 14",
+    "Next.js 13",
+    "server side rendering",
+    "SSR",
+    "actions",
+    "sever actions",
     "Next.js",
     "Typescript",
     "snippets",
@@ -60,6 +66,7 @@
     "React",
     "development",
     "app router",
-    "13+"
+    "13+",
+    "14+"
   ]
 }

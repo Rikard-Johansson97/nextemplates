@@ -1,55 +1,58 @@
-# 🧙‍♂️ NexTemplates for Next.js 13+
+# 🧙‍♂️ NexTemplates for Next.js 14+
 
-✨ Welcome to **NexTemplates**—your magical extension for VS Code that propels your Next.js 13+ development journey to the stratosphere. Say goodbye to monotonous boilerplate and hello to instant scaffolding!
+✨ Welcome to **NexTemplates**—your magical VS Code extension for instant Next.js 14+ component creation!
 
-![Banner](./assets/banner.gif)
+## 🎩 Features
 
-## 🎩 Features: Where Magic Happens!
+Harnessing arcane arts, NexTemplates transforms simple prefixes into robust Next.js components:
 
-**NexTemplates** harnesses the arcane arts to transform simple prefixes into robust Next.js components. Just whisper the right incantation, and behold as your spell manifests!
-
-| prefix  | summons                                    |
-| ------- | ------------------------------------------ |
-| `npc`   | Next page component                        |
-| `npcp`  | Next Page component with props             |
-| `npcpp` | Next Page component with props with params |
-| `ncc`   | Next Client component                      |
-| `nccp`  | Next Client component with props           |
-| `nsc`   | Next Server component                      |
-| `nscp`  | Next Server component with props           |
-| `nasc`  | Next Async server component                |
-| `nascp` | Next Async server component with props     |
-| `nlcp`  | Next Layout component with props           |
-| `nlc`   | Next Loading component                     |
-| `nmw`   | Next Middleware                            |
-| `nsmd`  | Next Static metadata                       |
-| `ngmd`  | Next Generated metadata                    |
-| `nec`   | Next error component                       |
-| `ngec`  | Next global-error component                |
-| `nnfc`  | Next not-found component                   |
-| `nasac` | Next async server action component         |
-| `nasaf` | Next async server action function          |
-
-> 🌌 **Mystic Tip**: For a visual spectacle of these spells, let the GIF above guide you!
+| Prefix      | Summons                                    |
+| ----------- | ------------------------------------------ |
+| `npc`       | Next page component                        |
+| `npcp`      | Next Page component with props             |
+| `npcpp`     | Next Page component with props with params |
+| `ncc`       | Next Client component                      |
+| `nccp`      | Next Client component with props           |
+| `nsc`       | Next Server component                      |
+| `nscp`      | Next Server component with props           |
+| `nasc`      | Next Async server component                |
+| `nascp`     | Next Async server component with props     |
+| `nlcp`      | Next Layout component with props           |
+| `nlc`       | Next Loading component                     |
+| `nmw`       | Next Middleware                            |
+| `nsmd`      | Next Static metadata                       |
+| `ngmd`      | Next Generated metadata                    |
+| `nec`       | Next error component                       |
+| `ngec`      | Next global-error component                |
+| `nnfc`      | Next not-found component                   |
+| `nasac`     | Next async server action component         |
+| `nasaf`     | Next async server action function          |
+| `ngetr`     | Next Get Route                             |
+| `nheadr`    | Next Head Route                            |
+| `npostr`    | Next Post Route                            |
+| `nputr`     | Next Put Route                             |
+| `ndelete`   | Next Delete Route                          |
+| `npatchr`   | Next Patch Route                           |
+| `noptionsr` | Next Options Route                         |
+| `ntc`       | Next Template Component                    |
+| `nrf`       | Next Robots File                           |
 
 ## 📜 Prerequisites
 
-Before wielding this powerful extension, ensure you've mastered the scrolls of Next.js and React. If these aren't in your grimoire yet, best obtain them first.
+Master Next.js and React before wielding this powerful extension.
 
 ## 🔮 Usage
 
-1. **Installation**: Invoke the **NexTemplates** extension from the VS Code marketplace.
-2. **Casting Spells**: In any `typescript` file, type your chosen prefix (like `npc` for a new page component). Hit `Tab`, and watch the magic unfold.
-3. **Customization**: Each spell (snippet) contains placeholders (`$1`, `$2`, etc.) that guide your incantations. Navigate between them using the `Tab` key to customize the generated component.
+1. **Installation**: Get NexTemplates from the VS Code marketplace.
+2. **Casting Spells**: Type a prefix (e.g., `npc`) in a TypeScript file, hit `Tab`, and watch the magic unfold.
+3. **Customization**: Navigate placeholders (`$1`, `$2`, etc.) using `Tab` for component customization.
 
 ## 📌 Enhancements
 
-1. **GitHub Copilot Synergy**: Combine the might of **NexTemplates** with [GitHub Copilot](https://copilot.github.com/) to ascend to coding divinity. Let Copilot complete your spells and incantations, making the coding process truly ethereal.
-2. **Optimal Setting**: To ensure your spells are woven seamlessly, consider setting `"editor.suggest.snippetsPreventQuickSuggestions": true` in your VS Code settings. This arcane tweak ensures that the auto-suggestions don't interfere with the magic of your snippets.
-3. **Conformity with Best Practices**: NexTemplates diligently follows the practices laid out in the [Vercel Style Guide](https://github.com/vercel/style-guide). Moreover, the snippets are conjured directly from the sacred texts of the [Next.js documentation](https://nextjs.org/docs/app/building-your-application/routing), ensuring your components are not only spellbinding but also crafted following the sacred lore.
+1. **GitHub Copilot Synergy**: Combine NexTemplates with [GitHub Copilot](https://copilot.github.com/) for ethereal coding.
+2. **Optimal Setting**: Set `"editor.suggest.snippetsPreventQuickSuggestions": true` in VS Code settings for seamless spell weaving.
+3. **Best Practices**: NexTemplates follows the Vercel Style Guide and Next.js documentation for spellbinding components.
 
 ## 🎉 Concluding the Ritual
 
-With **NexTemplates**, each line of code feels like a mystical chant, and redundant code becomes folklore. Embrace the enchantment and let your Next.js journey be filled with wonder.
-
-May your code be forever enchanted! ✨
+With NexTemplates, coding feels like a mystical chant, and redundancy becomes folklore. Embrace the enchantment and let your Next.js journey be filled with wonder. ✨

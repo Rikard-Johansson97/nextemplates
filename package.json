@@ -4,7 +4,7 @@
   "displayName": "NexTemplates",
   "icon": "assets/wizard-icon.png",
   "description": "NexTemplates is a collection of snippets and templates for Next.js 14+.",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "engines": {
     "vscode": "^1.83.0"
   },

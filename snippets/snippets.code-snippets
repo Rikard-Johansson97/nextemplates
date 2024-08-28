@@ -110,12 +110,12 @@
     "body": [
       "\"use client\"",
       "",
-      "function use${TM_FILENAME_BASE}() {",
+      "function ${TM_FILENAME_BASE}() {",
       "  $1",
       "  return {};",
       "}",
       "",
-      "export { use${TM_FILENAME_BASE} };"
+      "export { ${TM_FILENAME_BASE} };"
     ],
     "description": "Generates a Next.js client-side custom hook based on the file name."
   },
@@ -130,12 +130,12 @@
       "  $1",
       "};",
       "",
-      "function use${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
+      "function ${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
       "  $3",
       "  return {};",
       "}",
       "",
-      "export { use${TM_FILENAME_BASE} };"
+      "export { ${TM_FILENAME_BASE} };"
     ],
     "description": "Generates a Next.js TypeScript client-side custom hook with props based on the file name."
   },

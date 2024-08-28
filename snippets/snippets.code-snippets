@@ -104,6 +104,42 @@
     "description": "Generates a Next.js TypeScript client-side functional component based on the file name."
   },
 
+  // NH = Next Hook
+  "🧙‍♂️ Next Hook 🧙‍♂️": {
+    "prefix": "nh",
+    "body": [
+      "\"use client\"",
+      "",
+      "function use${TM_FILENAME_BASE}() {",
+      "  $1",
+      "  return {};",
+      "}",
+      "",
+      "export { use${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js client-side custom hook based on the file name."
+  },
+
+  // NHP = Next Hook with Props
+  "🧙‍♂️ Next Hook with Props 🧙‍♂️": {
+    "prefix": "nhp",
+    "body": [
+      "\"use client\"",
+      "",
+      "type ${TM_FILENAME_BASE}Props = {",
+      "  $1",
+      "};",
+      "",
+      "function use${TM_FILENAME_BASE}({ $2 }: ${TM_FILENAME_BASE}Props) {",
+      "  $3",
+      "  return {};",
+      "}",
+      "",
+      "export { use${TM_FILENAME_BASE} };"
+    ],
+    "description": "Generates a Next.js TypeScript client-side custom hook with props based on the file name."
+  },
+
   // NSC = Next Server Component
   "🧙‍♂️ Next Server Component 🧙‍♂️": {
     "prefix": "nsc",

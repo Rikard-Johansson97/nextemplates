@@ -13,6 +13,8 @@ Harnessing arcane arts, NexTemplates transforms simple prefixes into robust Next
 | `npcpp`     | Next Page component with props with params |
 | `ncc`       | Next Client component                      |
 | `nccp`      | Next Client component with props           |
+| `nh`        | Next Hook                                  |
+| `nhp`       | Next Hook with props                       |
 | `nsc`       | Next Server component                      |
 | `nscp`      | Next Server component with props           |
 | `nasc`      | Next Async server component                |
